@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap");
 :root {
   --spacing: 0.5rem;
-  --max-width: calc(100% - (2 * var(--spacing)));
+  --spacing-big: 1rem;
+  --max-width: calc(100% - var(--spacing-big));
   --primary-color: #333;
-  --secondary-color: #fdfdfd;
+  --secondary-color: #eee;
   --highlight-color: #00af0f;
   --shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3), 0 3px 3px 0 rgba(0, 0, 0, 0.15);
   --medium: 0.35s;
@@ -14,15 +15,22 @@ body {
   max-width: 35rem;
   margin: 0 auto;
   font-family: "Noto Sans", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
-
-.main-header {
-  margin: 0 var(--spacing) calc(2 * var(--spacing));
-	/* padding-bottom: var(--spacing);   */
-	box-shadow: var(--shadow);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
 }
-
+ul {
+	margin: 0;
+	padding-left: var(--spacing-big);
+}
 button {
   border: 1px solid black;
   padding: var(--spacing);
@@ -30,9 +38,54 @@ button {
   width: 100%;
 }
 
+a{
+	color: var(--highlight-color);
+	text-decoration: none;
+}
+.main-header {
+  margin: 0 var(--spacing) var(--spacing-big);
+  box-shadow: var(--shadow);
+  display: grid;
+  align-items: center;
+}
+.main-title {
+  font-size: 1rem;
+	display: inline-block;
+	margin-bottom: var(--spacing);
+	padding: var(--spacing);
+	text-align: right;
+}
+
+.heading {
+  display: block;
+  border-bottom: 1px solid var(--primary-color);
+  padding: var(--spacing);
+	background-color: var(--secondary-color);
+	margin-bottom: var(--spacing);
+}
+.heading strong {
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+  display: block;
+}
+.article{
+	margin-top: var(--spacing);
+	margin-left: var(--spacing);
+	margin-right: var(--spacing);
+	margin-bottom: var(--spacing-big);
+}
+.article .small{
+	font-size: .85rem;
+}
 
 @media (min-width: 768px) {
+	.main-title{
+		grid-template-columns: repeat(2, 1fr);
+	}
   body {
-    max-width: 95vw;
+    max-width: 75rem;
+  }
+  .heading strong {
+    display: inline;
   }
 }

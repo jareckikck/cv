@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="cv.css" />
     <link rel="stylesheet" href="tabs.css" />
-    <link rel="stylesheet" href="box.css" />
+    <link rel="stylesheet" href="all.min.css" />
+
     <title>Portfolio</title>
   </head>
   <body>
     <header class="main-header">
+      <h1 class="main-title">
+        Jarosław&nbsp;Grabarczyk - Frontend&nbsp;Developer
+      </h1>
       <nav id="tab-nav" class="tab-nav">
         <button class="tab tab--active">
           About
@@ -19,99 +23,257 @@
           Skills
         </button>
         <button class="tab">
-          More
+          Projects
         </button>
         <button class="tab">
           Contact
         </button>
       </nav>
     </header>
-    <section id="tab-container" class="tab-container">
-      <div id="about" class="tab-content tab-content--active">
-        <div class="box" title="About me?">
-          <p>Yet another javaScript fan...</p>
-        </div>
-      </div>
-      <div id="skills" class="tab-content">
-        <div class="box" title="javaScript">
-          <div class="content">
-            <p>ES6+</p>
-            <p>AJAX</p>
-            <p>jQuery</p>
-          </div>
-          <div class="caption">
+    <main id="tab-container" class="tab-container">
+      <div id="about" class="tab-content tab-content--active" title="About me">
+        <section>
+          <header>
+            <h2>Experience</h2>
+          </header>
+          <article class="article">
+            <h3 class="heading">
+              <strong>
+                <time>01.09.2018</time> - <time>31.01.2020</time>
+              </strong>
+              <span> Web Developer - Projectic</span>
+            </h3>
+            <h4>Technologies:</h4>
             <p>
-              I know arrow functions, new array methods. I familiar with OOP in
-              JS.
+              PHP, WordPress, Woocommerce, PrestaShop, HTML, CSS/SCSS, HTML,
+              GULP, JavaScript, jQuery, Git
             </p>
-          </div>
-        </div>
-        <div class="box" title="Angular">
-          <div class="content">
-            <p>Angular CLI</p>
-            <p>Angular Material</p>
-          </div>
-          <div class="caption">
-            <p>Mostly in learning proccess but i know basics already.</p>
-            <p>Currently working on web scrapping application.</p>
-          </div>
-        </div>
-        <div class="box" title="Vue">
+            <h4>Responsibilities/tasks:</h4>
+            <ul>
+              <li>
+                Website / service construction based on Wordpress, WooCommerce,
+                PrestaShop.
+              </li>
+              <li>
+                Rebuilding/creating the page/online store,
+              </li>
+              <li>
+                Adding functionality fetching news from client second site using
+                the WP REST API
+              </li>
+              <li>
+                introduction of a new graphic design
+              </li>
+              <li>
+                reconstruction and updating of the page code while maintaining
+                the old options and adding new ones.
+              </li>
+            </ul>
+            <h4>Additionaly:</h4>
+            <p>
+              Created my own WordPress template based on company one and
+              open-source project Understrap. Template uses
+              <strong>SCSS</strong> with customizable grid, mixins variables
+              etc. to easy set up. Has gulp with watch/browser-sync mode, SCSS
+              compiler, autoprefixer and babel compile an minifier.
+            </p>
+          </article>
+          <article class="article">
+            <h3 class="heading">
+              <strong>
+                <time> 01.04.2017 </time> - <time> 0.1.06.2018 </time>
+              </strong>
+              <span>Web Developer - Imol</span>
+            </h3>
+            <h4>Technologies (at the end):</h4>
+            <p>
+              PHP, WordPress, Woocommerce, PrestaShop, HTML, CSS/SCSS, HTML,
+              GULP, JavaScript, jQuery,
+            </p>
+            <h4>Responsibilities:</h4>
+            <p>
+              Website/service construction based on Wordpress, WooCommerce,
+              PrestaShop.
+            </p>
+            <h4>Accomplishments:</h4>
+            <ul>
+              <li>
+                Introduction of WordPress CMS in the company.
+              </li>
+              <li>
+                Implementation of the company's tempalte based on understrap.
+              </li>
+              <li>
+                Implementation on SCS/GULP in company.
+              </li>
+            </ul>
+          </article>
+          <article class="article">
+            <h3 class="heading">
+              <strong>
+                <time>01.09.2016</time> - <time>0.1.06.2017</time>
+              </strong>
+              <span>Web Developer - Icommedia (internhsip)</span>
+            </h3>
+            <h4>Technologies:</h4>
+            <p>
+              PHP, WordPress, Woocommerce, HTML, CSS, JavaScript, jQuery
+            </p>
+            <h4>Responsibilities:</h4>
+            <p>Website/service construction based on Wordpress, WooCommerce,</p>
+          </article>
+        </section>
+      </div>
+      <div id="skills" class="tab-content" title="Skills">
+        <article class="article">
+          <h3 class="heading">
+            JavaScript
+          </h3>
+          <p>ES6+</p>
+          <p>AJAX</p>
+          <p>jQuery</p>
+
+          <p>
+            I know arrow functions, new array methods. I familiar with OOP in
+            JS.
+          </p>
+        </article>
+        <article class="article">
+          <h3 class="heading">Angular</h3>
+          <p>Angular CLI</p>
+          <p>Angular Material</p>
+          <p>Mostly in learning proccess but i know basics already.</p>
+          <p>Currently working on web scrapping application.</p>
+        </article>
+        <article class="article">
+          <h3 class="heading">Vue</h3>
           <p>Just basics</p>
           <p>Vue CLI</p>
-        </div>
-        <div class="box" title="CMS">
-          <p>WordPress/WooCommerce</p>
+        </article>
+        <article class="article">
+          <h3 class="heading">CMS</h3>
+          <p>WordPress</p>
+          <p>WooCommerce</p>
           <p>PrestaShop</p>
-          <p>Drupal</p>
-        </div>
-        <div class="box" title="Styling/Layout">
+        </article>
+        <article class="article">
+          <h3 class="heading">
+            Style/Layout
+          </h3>
           <p>CSS3</p>
           <p>SCSS (mixins, functions, iterations etc.)</p>
           <p>HTML5</p>
-        </div>
-        <div class="box" title="Other">
+        </article>
+        <article class="article">
+          <h3 class="heading">
+            Other
+          </h3>
           <p>GIT</p>
           <p>Gulp</p>
           <p>PHP</p>
           <p>PhotoShop CC</p>
           <p>Firebase</p>
-        </div>
+        </article>
       </div>
-      <div id="More" class="tab-content">
-        Lorem ipsum 3 dolor sit amet consectetur adipisicing elit. Autem quod
-        hic natus rerum repellat accusamus quaerat placeat perspiciatis culpa
-        suscipit, quo, ad dolores! Natus deserunt est soluta tempore dolores
-        quisquam?
-      </div>
-      <div id="Contact" class="tab-content">
-        <div class="box" title="Contact">
+      <div id="Projects" class="tab-content" title="My projects">
+        <article class="article">
+          <h3 class="heading">VUE</h3>
           <p>
-            <span>Phone:</span><a href="tel:+48669043494">+48 6690 434 94</a>
+            Simple Vue App for filterging recipes by ingridient, title, category
+            or name.
+					</p>
+					<hr>
+          <p>
+            <span class="small"> Link 
+            <a
+              target="_blank"
+              href="https://github.com/jareckikck/vue-recipe-app"
+              >Here</a
+            ></span>
+          </p>
+        </article>
+        <article class="article">
+          <h3 class="heading">WordPress</h3>
+          <p>
+            My own template for WordPress development. Used to use it in work.
+            Has couple of handy features like: live mode, scss compiler,
+            autoprefixer, babel compiler and js minifier (all implemented with
+            gulp).
           </p>
           <p>
-            <span>E-mail:</span
-            ><a href="mailto:jaroslawgrabarczyk01@gmail.com"
+            SCSS are highly customizable due to my own grid (flexbox based) and
+            variables structure. FOr example: declared colors will be used to
+            generate buttons classes, declared spacing will be used to generate
+            spacing classes (I tend to use atomic metodology for spacing and BEM
+            for component specific styles). SCSS functions and mixins for better
+            experience.
+          </p>
+					<hr>
+          <p>
+            <span class="small"> Link </span>
+            <a target="_blank" href="https://github.com/jareckikck/wp_theme"
+              >Here</a
+            ></span>
+          </p>
+        </article>
+        <article class="article">
+          <h3 class="heading">Angular</h3>
+          <p>
+            Web scrapping app. Search Query settings can be set/modyfied by
+            frontend app and save to firebase. From firebase backend get query
+            and run puppetter to scrap for data. Data is saved to firebase from
+            where can be used by frontend to display scapped data.
+          </p>
+          <p>
+            For now as backend i'm using single file script runing manually from
+            my terminal.
+					</p>
+					<hr>
+          <p>
+            <span class="small"> Link to "backend" script </span>
+            <a target="_blank" href="https://github.com/jareckikck/scrap-script"
+              >Here</a
+            ></span>
+          </p>
+          <p>
+            <span class="small"> Link to Angular app </span>
+            <a
+              target="_blank"
+              href="https://github.com/jareckikck/angular-firestore-web-scrap"
+              >Here</a
+            ></span>
+          </p>
+        </article>
+      </div>
+      <div id="Contact" class="tab-content" title="Contact">
+        <div title="Contact">
+          <div class="article">
+            <span class="heading"><i class="fa fa-envelope"></i> E-mail:</span
+            ><a target="_blank" href="mailto:jaroslawgrabarczyk01@gmail.com"
               >jaroslawgrabarczyk01@gmail.com</a
             >
-          </p>
-          <p>
-            <span>Github:</span
-            ><a href="https://github.com/jareckikck/" rel="nofolow"
+          </div>
+          <div class="article">
+            <span class="heading"><i class="fab fa-github"></i> Github:</span
+            ><a
+              target="_blank"
+              href="https://github.com/jareckikck/"
+              rel="nofolow"
               >https://github.com/jareckikck/</a
             >
-          </p>
-          <p>
-            <span>LinkedIn:</span
+          </div>
+          <div class="article">
+            <span class="heading"
+              ><i class="fab fa-linkedin"></i> linkedIn:</span
             ><a
               href="https://www.linkedin.com/in/jaros%C5%82aw-grabaczyk-932261150/"
               rel="nofolow"
-              >https://www.linkedin.com/in/jaros%C5%82aw-grabaczyk-932261150/</a
+              >https://www.linkedin.com/my-profile</a
             >
-          </p>
+          </div>
         </div>
       </div>
-    </section>
+    </main>
 
     <footer></footer>
   </body>
