@@ -74,9 +74,7 @@
 .tab-content p {
   margin: 0;
 }
-/* .tab-content article {
-  margin: var(--spacing) 0 var(--spacing-big);
-} */
+
 .tab-content .caption {
   margin-top: var(--spacing);
   padding-top: var(--spacing);
@@ -90,6 +88,11 @@
 }
 .tab-content p:not(:last-child) {
   margin-bottom: calc(var(--spacing) / 2);
+  
+}
+.tab-content .txt p:not(:last-child) {
+  
+  margin-bottom: var(--spacing-big);
 }
 
 .tab-content--active {

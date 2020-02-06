@@ -57,8 +57,7 @@ a{
 }
 
 .heading {
-  display: block;
-  border-bottom: 1px solid var(--primary-color);
+  display: block;  
   padding: var(--spacing);
 	background-color: var(--secondary-color);
 	margin-bottom: var(--spacing);
